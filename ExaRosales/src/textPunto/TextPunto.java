@@ -16,8 +16,8 @@ public class TextPunto {
       do{
           
           
-          op = (int) (Math.random()*4); 
-          if(op<=4 && op>=1 ) { 
+          op = (int) (Math.random()*4+1); 
+          if(op<=5 && op>=1 ) { 
           System.out.println("ecriba cuantas posiciones desea mover al objeto");
           n=escaneo.nextInt();
           }
@@ -30,9 +30,10 @@ public class TextPunto {
                 break;
                 case 4 : Objtablero.izquierda(n);
                 break;
+                
          
                 }
-           
+
           System.out.println("su posición actual es:");      
           System.out.println("("+Objtablero.getx()+","+Objtablero.gety()+")");
           
