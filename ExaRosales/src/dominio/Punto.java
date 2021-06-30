@@ -8,10 +8,6 @@ public class Punto {
     private int x;
     private int y;
 
-public Punto (){
-   x=0;
-   y=0; 
-} 
 
 
 public void arriba (int n){

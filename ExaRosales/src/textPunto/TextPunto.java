@@ -10,6 +10,7 @@ public class TextPunto {
      Punto Objtablero = new Punto();
       int op,n=0; 
       int m;
+      int i =0;
         System.out.println("Ingrese el numero de movimientos que desea hacer");
         m = escaneo.nextInt();
       System.out.println("El movimiento será realizado aleatoriamente, puede ser hacia arriba, abajo,izquierda o derecha");
@@ -30,6 +31,7 @@ public class TextPunto {
                 break;
                 case 4 : Objtablero.izquierda(n);
                 break;
+                case 5 : break;
                 
          
                 }
@@ -42,8 +44,8 @@ public class TextPunto {
           double dT;
           dT = sqrt((Math.pow(Objtablero.getx(),2))+(Math.pow(Objtablero.gety(),2)));
           System.out.println("La distancia total recorrida por el objeto es: "+dT);
-          
-        }while(op!=5);
+          i++;
+        }while(i<=m);
     }     
     
     
