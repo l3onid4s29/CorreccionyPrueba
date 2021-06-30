@@ -45,7 +45,7 @@ public class TextPunto {
           dT = sqrt((Math.pow(Objtablero.getx(),2))+(Math.pow(Objtablero.gety(),2)));
           System.out.println("La distancia total recorrida por el objeto es: "+dT);
           i++;
-        }while(i<=m);
+        }while(i<m);
     }     
     
     
